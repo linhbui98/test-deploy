@@ -10,6 +10,6 @@ http1app.set('views', path.join(__dirname, 'views'));
 http1app.set('view engine', 'pug');
 http1app.get('/', indexRoute)
 
-Https.createServer(http1app).listen(PROCESS.ENV.PORT || 8080, () => {
+Https.createServer(http1app).listen(process.env.PORT || 8080, () => {
     console.log("App running")
 });
